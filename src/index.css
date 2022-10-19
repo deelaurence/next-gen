@@ -1,3 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: poppins;
+  overflow: hidden;
+  transition: .2s;
+  /* cursor: none; */
+  /* border: solid 1px red; */
+}
+
+.svg {
+  position: fixed;
+  /* z-index: -1; */
+  opacity: .1;
+  height: calc(100% + 20%);
+  width: calc(100% + 20%);
+  top: -20% !important;
+  left: -20% !important;
+  z-index: 1;
+  animation: noise 3s;
+  filter: url(#noise);
+  background: repeating-linear-gradient(#111, #111 50%, #fff 50%, #fff);
+  background-size: 5px 5px;
+  /* display: none; */
+}
+
+.svg1 {
+  position: fixed;
+  /* z-index: -1; */
+  /* opacity: .1; */
+  height: calc(100% + 20%);
+  width: calc(100% + 20%);
+  top: -20% !important;
+  left: -20% !important;
+  z-index: 1;
+  /* animation: noise 3s; */
+  filter: url(#noise);
+  background: repeating-linear-gradient(#111, #111 50%, #fff 50%, #fff);
+  background-size: 5px 5px;
+  /* display: none; */
+}
+
+@keyframes noise {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0.1;
+  }
+}
+
+html {
+  overflow-y: scroll;
+}
+
+.become-model {
+  background: url('./images/bg-girl.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
